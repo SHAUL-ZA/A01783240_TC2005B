@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_cheat_sheet</title> 
+</head>
+<body>
+    <h1>Uso de los Tags en HTML</h1>
+    <a class="boton-tarea1" href="../../../index.html">Volver</a>
+    <p>En este documento se muestran los tags mas usados en HTML</p>
+    <p>Los tags se pueden usar de dos formas:</p>
+    <ul>
+        <li>Con etiqueta de apertura y cierre</li>
+        <li>Con etiqueta de apertura</li>
+    </ul>
+    <p>Los tags de apertura y cierre se usan para agrupar contenido</p>
+    <p>Los tags de apertura se usan para agregar contenido, como se muestra en los siguientes ejemplos:</p>
+    <ul>
+        <li style="color: rgb(139, 137, 0);"> El archivo html está nombrado con clases y otros elementos que pueden ser utilizados con css en caso de que se le de continuidad a este trabajo y se le aplique una hoja de estilos</li>
+    </ul>
+
+
+
+    <div class="tags">
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag a</h2>
+            <p>
+                Etiqueta utilizada para la creación de hipervíncluos donde 
+                podemos insertar referencias de enlaces a otra pagina web. 
+                Se utiliza "href" y se le da el atributo, después entre la apertura y cierre se 
+                ingresa el nombre con el que se presentará el vínculo.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;a href="https://www.google.com/"> Liga a Google &lt;/a &gt;
+            </p>
+            <a href="https://www.google.com/">Liga a Google</a>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag p</h2>
+            <p>
+                Etiqueta designada para parrafos que generalmente se utilizan para agregar información 
+                sobre algún elemento de la página.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Esta es una etiqueta de parrafo dentro de la tarea html_cheat_sheet &lt;/p&gt;
+            </p>
+            <p>
+                Esta es una etiqueta de parrafo dentro de la tarea html_cheat_sheet
+            </p>
+        </div>
+
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag h1, h2,...h6</h2>
+            <p>
+                Etiquetas de encabezados. Poseen una jerarquía de h1 hasta h6 y se ocupan depenediendo el caso
+                Unicamente puede haber un h1 por página que se ocupa como encabezado principal.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;h1&gt; Encabezado principal &lt;/h1&gt;
+                <br>
+                &lt;h2&gt; Encabezado secundario &lt;/h2&gt;
+                <br>
+                &lt;h3&gt; Encabezado h3 &lt;/h3&gt;
+                <br>
+                &lt;h4&gt; Encabezado h4 &lt;/h4&gt;
+                <br>
+                &lt;h5&gt; Encabezado h5 &lt;/h5&gt;
+                <br>
+                &lt;h6&gt; Encabezado h6 &lt;/h6&gt;
+            </p>
+            <h1>Encabezado principal</h1>
+            <h2>Encabezado secundario</h2>
+            <h3>Encabezado h3</h3>
+            <h4>Encabezado h4</h4>
+            <h5>Encabezado h5</h5>
+            <h6>Encabezado h6</h6>
+
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag div</h2>
+            <p>
+                Los div se ocupan para dividir un grupo de elementos de la pagina que se ocupan como contenedores para dar 
+                estilos a esos elementos con significado específico con ayuda de CSS.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                Obtenido de un frontend de una tienda de camisetas hice hace unos meses:
+                <br>
+                &lt;div class="producto"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;img class="producto__imagen" src="#" alt="imagen camisa"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="producto__informacion"&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="producto__nombre"&gt;Github&lt;/p&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p class="producto__precio"&gt;$25&lt;/p&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/a&gt;
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;  &lt;!--.producto--&gt;
+            </p>
+            
+            <div class="producto">
+                <a href="#">
+                    <img class="producto__imagen" src="#" alt="imagen camisa">
+                    <div class="producto__informacion">
+                        <p class="producto__nombre">Github</p>
+                        <p class="producto__precio">$25</p>
+                    </div>
+                </a>
+            </div>  <!--.producto-->
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag span</h2>
+            <p>
+                La etiqueta span se ocupa en elementos de nivel de linea que dentro de ella se puede encerrar el contenido al que se 
+                le quiere aplicar un atributo o estilo específico pero que no deja de pertenecer a su etiqueta general.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Como se menciona en la tarea,  &lt;span style="color: rgb(230, 12, 12);"&gt; span &lt;/span&gt; es una etiqueta que se ocupa para darle estilo a un texto específico dentro de un párrafo. &lt;/p&gt;
+            </p>
+            <p>
+                Como se menciona en la tarea, <span style="color: rgb(230, 12, 12);">span</span> es una etiqueta que se ocupa para darle estilo a un texto específico dentro de un párrafo.
+            </p>
+        </div>
+
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag strong</h2>
+            <p>
+                La etiqueta strong es utilizada para poner en negrita el texto que esté dentro de su espacio.
+                strong posee un significado semántico que busca denotar importancia al texto.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; &lt;strong&gt; strong &lt;/strong&gt; es una etiqueta que se ocupa para darle estilo a un texto específico dentro de un párrafo. &lt;/p&gt;
+            </p>
+            <p>
+                <strong>strong</strong> es una etiqueta que se ocupa para darle estilo a un texto específico dentro de un párrafo.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag i</h2>
+            <p>
+                La etiqueta i se ocupa de manera semántica para transmitir texto a voz o tono alternativo.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Los &lt;i&gt; bits &lt;/i&gt; son los elementos básicos de la informática. &lt;/p&gt;
+            </p>
+            <p>
+                Los <i>bits</i> son los elementos básicos de la informática.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag u</h2>
+            <p>
+                La etiqueta u se ocupa para poner en subrayado el texto que esté dentro de su espacio.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Los &lt;u&gt; bits &lt;/u&gt; son los elementos básicos de la informática. &lt;/p&gt;
+            </p>
+            <p>
+                Los <u>bits</u> son los elementos básicos de la informática.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag b</h2>
+            <p>
+                La etiqueta b se ocupa para poner en negrita el texto que esté dentro de su espacio.
+                b no posee un significado semántico que busca denotar importancia al texto.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Esto es un texto normal &lt;b&gt;  Esto es un texto en negritas&lt;/b&gt; &lt;/p&gt; 
+            </p>
+            <p>
+                Esto es un texto normal <b> Esto es un texto en negritas</b>
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag strike</h2>
+            <p>
+                La etiqueta strike se ocupa para poner en tachado el texto que esté dentro de su espacio.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Esto es un texto normal &lt;strike&gt;  Esto es un texto tachado&lt;/strike&gt; &lt;/p&gt;
+            </p>
+            <p>
+                Esto es un texto normal <strike> Esto es un texto tachado</strike>
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag small</h2>
+            <p>
+                La etiqueta small se ocupa para poner en pequeño el texto que esté dentro de su espacio.
+                Busca semánticamente transmitir información secundaria como derechos de autor, fecha de publicación, etc.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;small&gt; tarea publicada el 10 de abril de 2023 &lt;/small&gt; 
+            </p>
+            <small>tarea publicada el 10 de abril de 2023</small>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag em</h2>
+            <p>
+                La etiqueta em se ocupa para poner en cursiva el texto que esté dentro de su espacio.
+                em posee un significado semántico que busca denotar importancia al texto.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Le das mucha &lt;em&gt; importancia&lt;/em&gt; al asunto. &lt;/p&gt;     
+            </p>
+            <p>
+                Le das mucha <em>importancia</em> al asunto.
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag header</h2>
+            <p>
+                La etiqueta header se ocupa para agrupar elementos de encabezado de la página que definen el encabezado.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;header&gt;
+                <br>
+                &lt;h2&gt; Título &lt;/h2&gt;
+                <br>
+                &lt;h3&gt; Subtítulo &lt;/h3&gt;
+                <br>
+                &lt;/header&gt;
+            </p>
+            <header>
+                <h2>Título</h2>
+                <h3>Subtítulo</h3>
+            </header>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag section</h2>
+            <p>
+                La etiqueta section se ocupa para identificar un grupo de elementos con una temática de contenido específica.
+                También se utiliza para dividir el contenido de la página en secciones.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;section&gt;
+                <br>
+                &lt;h2&gt; datos de contacto &lt;/h2&gt;
+                <br>
+                &lt;h3&gt; numero  &lt;/h3&gt;
+                <br>
+                &lt;a&gt; mail  &lt;a&gt;
+                <br>
+                &lt;/section&gt;
+            </p>
+            <section>
+                <h2>datos de contacto</h2>
+                <h3>numero</h3>
+                <a href="mailto: A01783240@tec.mx?Subject=Pagina%20Web%20Tareas">mail</a>       
+            </section>    
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag article</h2>
+            <p>
+                La etiqueta article se ocupa para identificar un grupo de elementos que forman un contenido independiente.
+                Por ejemplo, un artículo de un blog, un mensaje de un foro, etc. 
+                Si una etiqueta de article se elimina, el contenido que contiene no pierde sentido.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p> 
+                &lt;article&gt;
+                <br>
+                &lt;h3&gt; HTML &lt;/h3&gt;
+                <br>
+                &lt;p&gt; HTML es un lenguaje utilizado para la elaboración de páginas web &lt;/p&gt;
+                <br>
+                &lt;/article&gt;
+                <br>
+                &lt;article&gt;
+                <br>
+                &lt;h3&gt; CSS &lt;/h3&gt;
+                <br>
+                &lt;p&gt; CSS es un lenguaje utilizado para la creación de estilos de páginas web &lt;/p&gt;
+                <br>
+                &lt;/article&gt;
+            </p>
+            <article>
+                <h3>HTML</h3>
+                <p>HTML es un lenguaje utilizado para la elaboración de páginas web</p>
+            </article>
+
+            <article>
+                <h3>CSS</h3>
+                <p>CSS es un lenguaje utilizado para la creación de estilos de páginas web</p>
+            </article>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag aside</h2>
+            <p>
+                La etiqueta aside se ocupa para poner contenido indirectamente relacionado con el contenido principal de la página.
+                Se utiliza para poner contenido secundario como barras laterales, publicidad, etc.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                Fui a visitar la ciudad de Tokio en Japón.
+            </p>
+            <p>
+                &lt;aside&gt;
+                <br>
+                &lt;h3&gt; Información sobre Tokio &lt;/h3&gt;
+                <br>
+                &lt;p&gt; Tokio es la capital de Japón y la ciudad más poblada del mundo. &lt;/p&gt;
+                <br>
+                &lt;/aside&gt;
+            </p>
+            <aside>
+                <h3>Información sobre Tokio</h3>
+                <p>
+                    Tokio es la capital de Japón y la ciudad más poblada del mundo.
+                </p>
+            </aside>
+        
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag footer</h2>
+            <p>
+                La etiqueta footer se ocupa para agrupar elementos que definen el final de la página.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;footer&gt;
+                <br>
+                &lt;p&gt; &copy; 2023 - Todos los derechos reservados &lt;/p&gt;
+                <br>
+                &lt;/footer&gt;
+            <footer>
+                <p>
+                    &copy; 2023 - Todos los derechos reservados
+                </p>
+            </footer>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag nav</h2>
+            <p>
+                La etiqueta nav se ocupa para agrupar los principales enlaces de navegación de la página.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;nav&gt;
+                <br>
+                &lt;a href="#"&gt; Inicio &lt;/a&gt;
+                <br>
+                &lt;a href="#"&gt; Preguntas Frecuentes &lt;/a&gt;
+                <br>
+                &lt;a href="#"&gt; Sobre Nosotros &lt;/a&gt;
+                <br>
+                &lt;a href="#"&gt; Contactanos &lt;/a&gt;
+                <br>
+                &lt;/nav&gt;
+            </p>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Preguntas Frecuentes</a>
+                <a href="#">Sobre Nosotros</a>
+                <a href="#">Contactanos</a>
+            </nav>
+        </div>
+
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag img</h2>
+            <p>
+                La etiqueta img se ocupa para insertar una imagen en la página. 
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;img src="img/teamwork.jpg" alt="Trabajo en equipo"&gt;
+            </p>
+            <img src="../../img/teamwork.jpg" alt="Trabajo en equipo">
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag br</h2>
+            <p>
+                La etiqueta br se ocupa para hacer un salto de línea en el texto.
+                br no requiere de etiqueta de cierre.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                &lt;p&gt; Hola &lt;br&gt; ¿Cómo estás? &lt;/p&gt;
+            </p>
+            <p>
+                Hola <br> ¿Cómo estás?
+            </p>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag hr</h2>
+            <p>
+                La etiqueta hr se ocupa para hacer una línea horizontal en el texto para separar el contenido.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <p>
+                HTML es un lenguaje utilizado para la elaboración de páginas web.
+            </p>
+            <hr>
+            <p>
+                CSS es un lenguaje utilizado para la creación de estilos de páginas web.
+            </p>
+            <hr>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag form</h2>
+            <p>
+                La etiqueta form se ocupa para agrupar elementos de un formulario donde se puede ingresar información y esta ser enviada.
+                Se emplea para crear formularios de contacto, encuestas, etc.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <form class="formulario">
+                <fieldset>
+                    <legend>Contactános llenando todos los campos</legend>
+
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label>Nombre</label>
+                            <input class="input-text" type="text" placeholder="Tu Nombre">
+                        </div>
+
+                        <div class="campo">
+                            <label>Teléfono</label>
+                            <input class="input-text" type="tel" placeholder="Tu Teléfono">
+                        </div>
+
+                        <div class="campo">
+                            <label>Correo</label>
+                            <input class="input-text" type="email" placeholder="Tu Email">
+                        </div>
+                
+                        <div class="campo">
+                            <label>Mensaje</label>
+                            <textarea class="input-text"></textarea>
+                        </div>
+                    </div> <!-- .contenedor-campos -->
+
+                    <div class="boton-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+          
+            
+        </div>
+        
+        <div class="tag">
+            <h2 class="subtitulo">Tag table</h2>
+            <p>
+                La etiqueta table se ocupa para crear una tabla en la página.
+                table posee una estructura de etiquetas que se deben respetar para que la tabla se muestre correctamente como tr y td.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Shaul</td>
+                        <td>Zayat</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Victor</td>
+                        <td>Hernandez</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>Guillermo</td>
+                        <td>Sanchez</td>
+                        <td>25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag ul</h2>
+            <p>
+                La etiqueta ul se ocupa para crear una lista desordenada en la página.
+                ul posee una estructura de etiquetas que se deben respetar para que la lista se muestre correctamente como li.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <ul>
+                <li>Frappe</li>
+                <li>Expresso</li>
+                <li>Té</li>
+            </ul>
+        </div>
+
+        <div class="tag">
+            <h2 class="subtitulo">Tag ol</h2>
+            <p>
+                La etiqueta ol se ocupa para crear una lista ordenada en la página.
+                ol posee una estructura de etiquetas que se deben respetar para que la lista se muestre correctamente como li.
+            </p>
+            <p style="color: rgb(230, 12, 12);">Ejemplo:</p>
+            <ol>
+                <li>Frappe</li>
+                <li>Expresso</li>
+                <li>Té</li>
+            </ol>
+        </div>
+    </div>
+ 
+    <footer>
+        <small>Desarrollado por <a href="mailto: A01783240@tec.mx?Subject=Pagina%20Web%20Tareas" target="_blank">Shaul Zayat Askenazi</a></small>
+    </footer>
+
+</body>
+</html>
