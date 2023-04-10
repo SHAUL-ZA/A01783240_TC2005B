@@ -2,18 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tareas</title>
+    <title>TC2005B</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">   
+    <link rel="preload" href="/Sitio de tareas/css/styles.css" as="style">
+    <link href="/Sitio de tareas/css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World!!</h1>
-    <h2>Pagina principal</h2>
-    <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-        hen an unknown printer took a galley of type and scrambled it to make a type specimen book.
-         has survived not only five centuries
-    </p>
+    <header>
+        <h1 class="titulo">Desarrollo Web <span><em>>TC2005B</em></span></h1>
+    </header>
+
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="SobreMi.html">Sobre Mi</a>        
+        </nav>
+    </div>
+    
+    <section class="datos">
+        <div class="contenido-datos">
+            <h2>Shaul Zayat Askenazi <span>ITC</span></h2> 
+            <div class="ubicacion">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff9300" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="18" y1="6" x2="18" y2="6.01" />
+                    <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
+                    <polyline points="10.5 4.75 9 4 3 7 3 20 9 17 15 20 21 17 21 15" />
+                    <line x1="9" y1="4" x2="9" y2="17" />
+                    <line x1="15" y1="15" x2="15" y2="20" />
+                </svg>
+                <p>CDMX, México</p>
+            </div>
+            <a class="boton" href="mailto: A01783240@tec.mx?Subject=Pagina%20Web%20Tareas">Contactar</a>
+        </div> <!-- .contenido-datos --> 
+    </section> <!-- .datos -->
+    
+    <main class="contenedor sombra">
+        <h2>Desarrollo Web</h2>
+
+        <div class="elementos">
+            <section class="elemento">
+                <h3>HTML</h3>
+                <div class="iconos icono-html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 24 24">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2 5 5h-5V4zM8.531 18h-.76v-1.411H6.515V18h-.767v-3.373h.767v1.296h1.257v-1.296h.76V18zm3-2.732h-.921V18h-.766v-2.732h-.905v-.641h2.592v.641zM14.818 18l-.05-1.291c-.017-.405-.03-.896-.03-1.387h-.016c-.104.431-.245.911-.375 1.307l-.41 1.316h-.597l-.359-1.307a15.154 15.154 0 0 1-.306-1.316h-.011c-.021.456-.034.976-.059 1.396L12.545 18h-.705l.216-3.373h1.015l.331 1.126c.104.391.21.811.284 1.206h.017c.095-.391.209-.836.32-1.211l.359-1.121h.996L15.563 18h-.745zm3.434 0h-2.108v-3.373h.767v2.732h1.342V18z" fill="#fff"></path>
+                    </svg>
+                </div>
+                <p> 
+                    Componente más básico de la Web. Define el significado y la estructura del contenido web.
+                </p>
+            </section>
+        
+            <section class="elemento">
+                <h3>CSS</h3>
+                <div class="iconos icono-css">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="85" width="85">
+                        <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z" fill="#fff"></path>
+                    </svg>
+                </div>
+                <p>
+                    Describe como debe ser renderizado el elemento estructurado en la pantalla.
+                </p>
+            </section>
+
+            <section class="elemento">
+                <h3>JavaScript</h3>
+                <div class="iconos icono-js">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 32 32">
+                        <path d="M0 0h32v32h-32zM29.38 24.37c-0.234-1.464-1.188-2.688-4.005-3.833-0.979-0.458-2.073-0.781-2.396-1.521-0.12-0.438-0.141-0.677-0.063-0.938 0.203-0.865 1.219-1.12 2.021-0.88 0.521 0.161 1 0.557 1.302 1.198 1.38-0.901 1.38-0.901 2.339-1.5-0.359-0.557-0.536-0.802-0.781-1.036-0.839-0.943-1.958-1.422-3.776-1.38l-0.943 0.12c-0.901 0.219-1.76 0.698-2.281 1.339-1.516 1.719-1.078 4.719 0.76 5.964 1.818 1.359 4.479 1.656 4.823 2.938 0.318 1.563-1.161 2.063-2.625 1.88-1.078-0.24-1.677-0.781-2.339-1.781l-2.438 1.401c0.276 0.641 0.599 0.917 1.078 1.479 2.318 2.339 8.12 2.219 9.161-1.339 0.036-0.12 0.318-0.943 0.099-2.198zM17.401 14.708h-2.995c0 2.583-0.016 5.151-0.016 7.74 0 1.641 0.083 3.151-0.182 3.615-0.443 0.917-1.573 0.802-2.089 0.641-0.526-0.26-0.797-0.62-1.104-1.141-0.089-0.141-0.151-0.26-0.172-0.26l-2.432 1.5c0.406 0.839 1 1.563 1.766 2.021 1.141 0.682 2.672 0.901 4.276 0.542 1.042-0.302 1.943-0.922 2.411-1.88 0.682-1.24 0.536-2.76 0.531-4.464 0.016-2.74 0-5.479 0-8.24z" fill="#fff"></path>
+                    </svg>
+                </div>
+                <p>Lenguaje de programación utilizado para hacer que las páginas web sean interactivas y dinámicas.</p>
+            </section>
+        </div> <!--.elementos-->
+    
+        <h2>Proyectos</h2>
+        <section class="grid-tareas">
+                <div class="tarea">
+                    <h3 class="tarea-nombre">HTML Cheat Sheet</h3>
+                    <p class="tarea-desc">
+                        Descripción y uso de etiquetas HTML  
+                    </p>
+                    <a class="tarea-ref" href="/Tareas Locales/Desarrollo Web/Cheat_Sheet/html_cheat_sheet.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-check" width="90" height="90" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+                            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+                            <path d="M9 15l2 2l4 -4" />
+                        </svg>
+                    </a>
+                </div> 
+            
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+        <small> 2023. Todos los derechos reservados Shaul Zayat Askenazi </small>
+    </footer>
+
+
+
 </body>
 </html>
