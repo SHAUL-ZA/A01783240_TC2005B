@@ -1,0 +1,324 @@
+:root {
+    --blanco: #ffffff; 
+    --oscuro: #212121;
+    --primario: #fbb24c;
+    --secundario: #001326f6;
+    --gris: #757575;
+    --grisOscuro: #818080;
+    --grisClaro: #DFE9F3;
+    --js: #f7df1e;
+    --html5: #f06529;
+    --css3: #2965f1;
+    --naranja:#ff9300;
+    --verde: #016401;
+}
+/*  Globales **/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box; /* Hack para Box Model **/
+    scroll-snap-type: mandatory;
+}
+/** Scroll Snap**/
+.elementos,
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-size: 16px; /* 1rem = 10px */
+    font-family: 'Krub', sans-serif;
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% );
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+
+/*Si se llega a aplicar el style a la cheat_sheet*/
+.boton-tarea1{
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+}
+@media (min-width: 768px) {
+    .boton, .boton-tarea1 {
+        width: auto;
+    }
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Tipografia */
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 2.8rem;
+}
+h3 {
+    font-size: 1.8rem;
+}
+h1,h2,h3 {
+    text-align: center;
+}
+
+
+/* Titulos */
+.titulo{
+    font-family: 'Ubuntu', sans-serif;
+}
+.titulo span {
+    font-size: 3.2rem;  
+}
+/** Utilidades **/
+.w-sm-100 {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .w-sm-100 {
+        width: auto;
+    }
+}
+.flex {
+    display: flex;
+}
+
+/* Navegacion Principal */
+.nav-bg {
+    background-color: var(--secundario);
+}
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+.navegacion-principal a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+/* Datos */
+.datos {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contenido-datos {
+    position: absolute;
+    background-color: rgb( 0 0 0 / 30% );
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contenido-datos h2, 
+.contenido-datos p,
+.contenido-datos a {
+    color: var(--blanco);
+    font-family: 'Ubuntu', sans-serif;
+}
+.contenido-datos .ubicacion {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+
+/** Elementos **/
+@media (min-width: 768px) {
+    .elementos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+.elemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elemento h3 {
+    color: var(--secundario);
+    font-weight: 600;
+}
+.elemento p {
+    line-height: 2;
+    text-align: center;
+}
+.elemento .iconos {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.elemento .icono-html{
+    background-color: var(--html5);
+}
+.elemento .icono-css{
+    background-color: var(--css3);
+}
+.elemento .icono-js{
+    background-color: var(--js);
+}
+
+
+/** Contacto **/
+.formulario {
+    background-color: var(--gris);
+    width: min( 60rem, 100% ); /** Utilizar el valor más pequeño **/
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario fieldset {
+    border: none;
+}
+.formulario legend {
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--primario);
+}
+
+@media (min-width: 768px) {
+    .contenedor-campos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto 20rem ;
+        column-gap: 1rem;
+    }
+
+    .campo:nth-child(3),
+    .campo:nth-child(4) {
+        grid-column: 1 / 3;
+    }
+}
+.campo {
+    margin-bottom: 1rem;
+}
+.campo label {
+    color: var(--blanco);
+    font-weight: bold;
+    margin-bottom: .5rem;
+    display: block;
+}
+.campo textarea {
+    height: 20rem;
+}
+
+.input-text {
+    width: 100%;
+    border: none;
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Maya de elementos de tareas*/
+.grid-tareas{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/*Formato de elemento tarea*/
+.tarea{
+    background-color: var(--grisOscuro);
+    padding: 1rem;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1;
+    border-radius: 0.5rem;
+}
+
+.tarea-nombre{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--naranja);
+}
+
+.tarea-desc{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--blanco);
+}
+
+/** Footer **/
+.footer {
+    text-align: center;
+}
