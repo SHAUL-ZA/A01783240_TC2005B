@@ -1,0 +1,274 @@
+:root{
+    --rojo: red;
+    --azul: blue;
+    --verde: green;
+    --negro: black;
+    --amarillo: #f8d71b;
+    --azul_titulos: #02028a;
+    --gris: #606060;
+    --blanco: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.boton{
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 90%;
+    text-align: center;
+    border: none;
+    position: relative;
+    left: 85%;
+}
+
+
+
+.retorno-banner{
+    position: sticky;
+    top: 5%; 
+}
+
+
+.titulo-propiedad{
+    color: var(--azul_titulos);
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.descripcion{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 2rem;
+}
+
+.ejemplo{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: var(--verde)
+}
+
+.borde{
+    border: 1rem solid var(--gris);
+    width: 20%;
+    margin: 5rem auto;
+}
+
+.borde-lados{
+    border-left: 0.5rem solid var(--rojo);
+    border-right: 0.5rem solid var(--azul);
+    border-top: 0.5rem solid var(--verde);
+    border-bottom: 0.5rem solid var(--negro);
+    font-size: 2rem;
+    text-align: center;
+    width: 50%;
+    margin: 5rem auto;
+}
+
+.borde-rad{
+    width: 16rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--gris);
+    color: var(--blanco);
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    margin: 5rem auto;   
+}
+
+.imagen-fondo{
+    background-image: url(../img/terminal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.imagen-fondo p{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: var(--blanco);
+}
+
+.text-color{
+    font-size: 2.5rem;
+    color:crimson;
+}
+
+.text-font{
+    font: bold 1.5rem Times, Garamond;
+}
+.text-family{
+    font-size: 2.5rem;
+    font-family:cursive;
+}
+
+.text-styles{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.text-box{
+    width: 30%;
+    height: 50%;
+    background-color: var(--gris);
+    color: white;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.list{
+    list-style: armenian inside url(../img/planet.png);
+    font-size: 2rem;
+}
+
+.elemento-margen{
+    width: 50%;
+    height: 50%;
+    background-color: var(--gris);
+    color: var(--blanco);
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin: 5% auto;
+}
+
+.relleno{
+    border: 1rem solid var(--rojo);
+    padding: 10rem;
+    background-color: var(--amarillo);
+    margin: 5rem;
+}
+.relleno p{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.desbordamiento{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.desbordamiento p{
+    width: 20rem;
+    height: 20rem;
+    background-color: coral;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    margin: auto;
+}
+
+.visible {
+    overflow: visible;
+}
+
+.oculto {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row-revers;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*1fr = 1fracción de la pantalla*/
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 1rem; /*Espacio entre elementos*/
+    place-items: center; /*Centra los elementos en grid*/ 
+}
+
+.posicion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicion-1{
+    position: relative;
+    left: 5.5rem;
+}
+
+.posicion-2{
+    position: relative;
+    bottom: 2rem;
+}
+
+.posicion-3{
+    position: relative;
+    right: 5.5rem;
+}
+
+.elementos-graficos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.elementos-graficos .apple{
+    filter: invert(100%); opacity: 0.2;
+
+}
+.elementos-graficos .tesla{
+    filter: grayscale(25%); 
+    filter: hue-rotate(220deg);
+
+    
+}
+.elementos-graficos .falcon{
+    filter: blur(2px);
+}
+
+footer{
+    background-color: var(--gris);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
