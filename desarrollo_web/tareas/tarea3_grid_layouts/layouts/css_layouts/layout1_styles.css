@@ -61,15 +61,19 @@ h2{
     font-size: 3rem;
     text-align: center;
 }
+
+.layout-1{
+    height: 80%;
+}
 .contenedor{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2fr, 1fr);
     place-items: center;
     grid-gap: 2rem;
-    width: calc(100vw - 6rem);
-    height: 80rem;  
-    margin: auto 2rem;
+    width: calc(100vw - 2rem);
+    height: 100%;
+    margin: 0 auto;
 }
 
 
