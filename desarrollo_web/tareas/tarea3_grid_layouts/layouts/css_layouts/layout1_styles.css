@@ -1,0 +1,110 @@
+:root{
+    --rojo: #fc6057;
+    --naranja: #fd825c;
+    --naranja_claro: #fda061;
+    --turquesa_oscuro: #01a787;
+    --turquesa: #1bc1a1;
+    --turquesa_claro: #34daba;
+    --blanco: #ffffff;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: #000428;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.titulo{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--blanco);
+    margin: 2rem 0 0 0;
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    position: relative;
+    bottom: 4rem;
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    text-align: center;
+    border: none;
+}
+
+h2{
+    font-size: 3rem;
+    text-align: center;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2fr, 1fr);
+    place-items: center;
+    grid-gap: 2rem;
+    width: calc(100vw - 6rem);
+    height: 80rem;  
+    margin: auto 2rem;
+}
+
+
+.elemento{
+    height: 100%;
+    width: 100%;
+}
+
+/*Pseudoclases*/
+.elemento:nth-child(1){
+    background-color: var(--rojo);
+}
+
+.elemento:nth-child(2){
+    background-color: var(--naranja);
+}
+.elemento:nth-child(3){
+    background-color: var(--naranja_claro);
+}
+.elemento:nth-child(4){
+    background-color: var(--turquesa_oscuro);
+}
+.elemento:nth-child(5){
+    background-color: var(--turquesa);
+}
+.elemento:nth-child(6){
+    background-color: var(--turquesa_claro);
+}
+
+.footer{
+    font-size: 2rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+.footer a{
+    color: var(--blanco);
+    text-decoration: none;
+}

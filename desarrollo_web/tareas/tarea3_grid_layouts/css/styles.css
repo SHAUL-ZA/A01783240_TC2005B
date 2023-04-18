@@ -1,0 +1,109 @@
+:root{
+    --gris: #959090;
+    --blanco: #ffffff;
+    --verde: #00a650;
+    --fuentePrincipal: 'Kaushan Script', cursive;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    background: #2196f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f44336, #2196f3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f44336, #2196f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-repeat: no-repeat;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+h2{
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0f9b0f, #d98585); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: var(--blanco);
+    padding: 1rem 10rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1rem;
+    width: 95%;
+    text-align: center;
+    border: none;
+    margin: 0 auto;  
+}
+
+
+.layout-container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 2rem;
+    margin: 4rem 2rem;
+    place-content: center;
+}
+@media (min-width: 768px) {
+    .layout-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+/* Animaciones  */
+.layout-1:hover,
+.layout-2:hover, 
+.layout-3:hover, 
+.layout-4:hover{
+    animation: shake 0.2s;
+}
+@keyframes shake{
+    25%{
+        transform: translate(2px);
+    }
+    50%{
+        transform: translate(-2px);
+    }
+    75%{
+        transform: translate(2px);
+    }
+}
+
+.footer{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.footer p{
+    font-family: var(--fuentePrincipal);
+}
+.footer a{
+    color: var(--blanco);
+    text-decoration: none;
+}
