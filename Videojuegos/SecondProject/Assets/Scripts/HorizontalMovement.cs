@@ -18,12 +18,12 @@ public class HorizontalMovement : MonoBehaviour
     void Update()
     {
         move.x = Input.GetAxisRaw("Horizontal");
-
         if (transform.position.x < -limit && move.x < 0) {
             move.x = 0;
         } else if (transform.position.x > limit && move.x > 0) {
             move.x = 0;
         }
+
 
         transform.Translate(move * speed * Time.deltaTime);
     }
