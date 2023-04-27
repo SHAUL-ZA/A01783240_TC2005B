@@ -14,8 +14,9 @@ public class cameraMovement : MonoBehaviour
     void Update()
     {
         minY = minX * 9/16;
+        float time = Time.deltaTime;
         if (Mathf.Pow(player.position.x - transform.position.x, 2) + Mathf.Pow(player.position.y - transform.position.y,  2) >= (Mathf.Pow(minX, 2) + Mathf.Pow(minY, 2))) {
-            transform.position = new Vector3(transform.position.x + (player.position.x - transform.position.x) / 144, transform.position.y + (player.position.y - transform.position.y) / 144, transform.position.z);
+            transform.position = new Vector3(transform.position.x + (player.position.x - transform.position.x) / 60, transform.position.y + (player.position.y - transform.position.y) / 60, transform.position.z);
         }
     }
 }
