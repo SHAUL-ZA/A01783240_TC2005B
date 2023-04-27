@@ -5,29 +5,30 @@ using UnityEngine;
 public class Player_movement : MonoBehaviour
 {
     [SerializeField] float speed;
-    [SerializeField] float limitX;
-    [SerializeField] float limitY;
+
+    // Sprite Renderer
+    SpriteRenderer spriteRenderer;
+
+    void Start() {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     Vector3 move; 
     // Update is called once per frame
     void Update()
     {
+
+        // Get keyinputs to flip character
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow)) {
+            spriteRenderer.flipX = true;
+        } else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow)) {
+            spriteRenderer.flipX = false;
+        }
+        
         //Move and flip character
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
-        // Cambio 2
 
-        if (transform.position.x < -limitX && move.x < 0) {
-            move.x = 0;
-        } else if (transform.position.x > limitX && move.x > 0) {
-            move.x = 0;         
-        }
-
-        if(transform.position.y < -limitY && move.y < 0) {
-            move.y = 0;
-        } else if (transform.position.y > limitY && move.y > 0) {
-            move.y = 0;
-        }
         transform.Translate(move * speed * Time.deltaTime);
     }
 }
