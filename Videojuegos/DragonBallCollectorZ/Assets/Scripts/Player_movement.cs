@@ -15,6 +15,7 @@ public class Player_movement : MonoBehaviour
         //Move and flip character
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
+
         if (transform.position.x < -limitX && move.x < 0) {
             move.x = 0;
         } else if (transform.position.x > limitX && move.x > 0) {
