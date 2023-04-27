@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 82327191}
-  minX: 1
+  minX: 2
 --- !u!1 &956675057
 GameObject:
   m_ObjectHideFlags: 0
