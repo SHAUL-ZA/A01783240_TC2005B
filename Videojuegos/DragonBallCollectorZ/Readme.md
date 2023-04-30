@@ -1,6 +1,6 @@
 # Dragon Ball CollectorZ
 
-## Names:
+## Creators:
 - Shaul Zayat Askenazi - A01783240
 - Andrés Tarazona Solloa - A01023332
 
