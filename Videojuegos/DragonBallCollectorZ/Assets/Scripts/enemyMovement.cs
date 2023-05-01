@@ -23,6 +23,7 @@ public class enemyMovement : MonoBehaviour
         // enemyType 1 = vertical movement 
         // enemyType 2 = diagonal movement 
         // enemyType 3 = circular movement
+        // enemyType 4 = reverse diagonal
         if (enemyType == 0)
         {
             transform.position = new Vector3(startPos.x + Mathf.PingPong(Time.time * moveSpeed, moveRange), transform.position.y, transform.position.z);
@@ -37,6 +38,10 @@ public class enemyMovement : MonoBehaviour
         else if (enemyType == 3)
         {
             transform.position = new Vector3(startPos.x + Mathf.Sin(Time.time * moveSpeed) * moveRange, startPos.y + Mathf.Cos(Time.time * moveSpeed) * moveRange, transform.position.z);
+        } 
+        else if (enemyType == 4)
+        {
+            transform.position = new Vector3(startPos.x + Mathf.PingPong(Time.time * moveSpeed, moveRange), startPos.y - Mathf.PingPong(Time.time * moveSpeed, moveRange), transform.position.z);
         }
     }
 }

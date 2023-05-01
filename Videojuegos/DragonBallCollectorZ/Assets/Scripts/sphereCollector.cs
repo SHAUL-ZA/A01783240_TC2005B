@@ -14,6 +14,8 @@ public class sphereCollector : MonoBehaviour
             Destroy(colision.gameObject);
             counter++;
             spheres.text = "Score: " + counter;
+        } else if (colision.gameObject.CompareTag("Enemy")) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+2); //Carga escena de game over
         }
     }
 
