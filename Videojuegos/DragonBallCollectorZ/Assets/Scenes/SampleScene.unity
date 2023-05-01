@@ -1639,7 +1639,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.950181, y: 2.039192}
+  m_Size: {x: 0.950181, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &990819352
 GameObject:
@@ -2299,7 +2299,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.950181, y: 2.039192}
+  m_Size: {x: 0.950181, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1405298001
 GameObject:
@@ -2595,7 +2595,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.950181, y: 2.039192}
+  m_Size: {x: 0.950181, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1515049779
 MonoBehaviour:
@@ -2891,7 +2891,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.950181, y: 2.039192}
+  m_Size: {x: 3.5, y: 7}
   m_EdgeRadius: 0
 --- !u!114 &1785721773
 MonoBehaviour:
