@@ -24,6 +24,8 @@
     - You must clone the game from this repository, open the Unity file, once opened you must click on the play button at the top of the game.
 - **Controls**
     - Goku, being in his flying cloud, has freedom of movement.
-    Goku is controlled with the arrow keys on the keyboard.
+    - Goku is controlled with the arrow keys on the keyboard.
+    - If you hit an enemy, it will instantly send you to the game over screen. No life system.
+
 
 
