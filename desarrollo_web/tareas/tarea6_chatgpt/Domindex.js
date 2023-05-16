@@ -25,25 +25,26 @@ submitButton.addEventListener("click", function(event) {
     form.appendChild(fullNameElement);
 });
 
-
 const table = document.getElementById("sampleTable");
     const insertRowButton = document.getElementById("btn-insert-r");
     const insertColumnButton = document.getElementById("btn-insert-c");
 
     insertRowButton.addEventListener("click", function() {
-        const newRow = table.insertRow(); // Insertar una nueva fila al final de la tabla
-        const cell1 = newRow.insertCell(); // Insertar una celda en la nueva fila
-        const cell2 = newRow.insertCell(); // Insertar otra celda en la nueva fila
-        cell1.textContent = "New row column 1"; // Establecer el contenido de la primera celda
-        cell2.textContent = "New row column 2"; // Establecer el contenido de la segunda celda
+        //Agregar una fila por cada columna existente
+        const newRow = table.insertRow(); // Insertar una nueva fila en la tabla
+        const columns = table.rows[0].cells.length; // Obtener el número de columnas de la primera fila
+        for (let i = 0; i < columns; i++) {
+            const newRowCell = newRow.insertCell(); // Insertar una nueva celda en la nueva fila
+            newRowCell.textContent = "New row"; // Establecer el contenido de la nueva celda
+        }
+        
     });
 
     insertColumnButton.addEventListener("click", function() {
         const rows = table.rows; // Obtener todas las filas existentes en la tabla
-
         for (let i = 0; i < rows.length; i++) {
-            const newRowCell = rows[i].insertCell(); // Insertar una nueva celda en cada fila existente
-            newRowCell.textContent = "New column"; // Establecer el contenido de la nueva celda
+            const newColCell = rows[i].insertCell(); // Insertar una nueva celda en cada fila existente
+            newColCell.textContent = "New column"; // Establecer el contenido de la nueva celda
         }
     });
 
